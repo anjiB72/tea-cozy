@@ -7,11 +7,14 @@ body {
   color: seashell;
 }
 
+/*header with logo and menu*/
 header {
+  background-color: black;
   height: 69px;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,9 +25,10 @@ header {
   margin-left: 10px;
   }
 
-  Nav{
+Nav{
     margin-right: 10px;
   }
+
 .menu {
   padding-left: 20px;
 }
@@ -32,3 +36,84 @@ header {
   text-decoration: underline;
   color: seashell;
   }
+
+/*Main picture and heading text*/
+.maincontent{
+  background-image: url(../images/img-mission-background.jpg);
+  position: relative;
+  top: 70px;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto 130px auto;
+  display: flex;
+  align-items: center;
+}
+
+.mission{
+  background-color: black;
+  width:inherit;
+  height: auto;
+  margin: 0 auto;
+}
+
+  .mission h4,
+  .mission h2 {
+    width: inherit;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+  }
+
+
+/*tea of the month*/
+
+.tea-of-month{
+  position: relative;
+  top: 20px;
+  width: 1000px;
+  margin: 0 auto;
+  }
+
+
+.tom-heading {
+  margin: 0;
+  padding: 7px 0;
+  text-align: center;
+}
+
+.teas{
+  margin: 15px auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  }
+
+  .teas-top{
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .teas-bottom{
+    display: flex;
+    justify-content: center;
+  }
+
+  .myrtle {
+    margin-right: 25px;
+  }
+
+.berry,
+.rum,
+.donut,
+.myrtle,
+.bedford {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+    }
+
+.tea-name{
+  margin-top: 10px;
+}
