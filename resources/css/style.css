@@ -44,7 +44,7 @@ Nav{
   top: 70px;
   width: 1200px;
   height: 700px;
-  margin: 0 auto 130px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -67,17 +67,25 @@ Nav{
 
 /*tea of the month*/
 
-.tea-of-month{
+.container {
   position: relative;
-  top: 20px;
-  width: 1000px;
-  margin: 0 auto;
-  }
+  top: 70px;
+}
 
+.tea-of-month{
+  width: 1000px;
+  height: 700px;
+  margin: 0px auto;
+  }
 
 .tom-heading {
   margin: 0;
-  padding: 7px 0;
+  padding: 80px 0 10px 0;
+  text-align: center;
+}
+
+.container>h4 {
+  margin: 5px 0;
   text-align: center;
 }
 
@@ -117,3 +125,33 @@ Nav{
 .tea-name{
   margin-top: 10px;
 }
+
+/*Location styling*/
+.all-locations {
+  background-image: url(../images/img-locations-background.jpg);
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.downton,
+.bayside,
+.oakdale {
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
