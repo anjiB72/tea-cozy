@@ -40,8 +40,6 @@ Nav{
 /*Main picture and heading text*/
 .maincontent{
   background-image: url(../images/img-mission-background.jpg);
-  position: relative;
-  top: 70px;
   width: 1200px;
   height: 700px;
   margin: 0 auto;
@@ -68,19 +66,15 @@ Nav{
 /*tea of the month*/
 
 .container {
-  position: relative;
-  top: 70px;
-}
-
-.tea-of-month{
+  padding-top: 100px;
   width: 1000px;
   height: 700px;
   margin: 0px auto;
-  }
+}
 
 .tom-heading {
   margin: 0;
-  padding: 80px 0 10px 0;
+  padding: 17px 0px 0 10px 0;
   text-align: center;
 }
 
@@ -90,7 +84,7 @@ Nav{
 }
 
 .teas{
-  margin: 15px auto;
+  margin: 15px auto 0 auto;
   width: 1000px;
   display: flex;
   flex-direction: column;
@@ -134,9 +128,14 @@ Nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
-}
+  }
+
+  .all-locations>h2 {
+    margin: 60px auto 15px auto;
+    padding-top: 10px;
+  }
 
 .location {
   display: flex;
@@ -144,9 +143,9 @@ Nav{
   margin: 0 auto;
 }
 
-.downton,
-.bayside,
-.oakdale {
+
+
+.address {
   background-color: black;
   width: 300px;
   opacity: 1;
@@ -154,4 +153,29 @@ Nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
     }
+
+.address>span {
+  padding-bottom: 40px;
+}
+
+    .contactinfo {
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      align-items: center;
+      justify-content: space-between;
+      height: 200px;
+      margin: 0;
+    }
+
+.contactinfo>h2,
+.contactinfo>h5 {
+  margin: 0;
+  }
+
+  .copyright{
+    margin: 20px;
+    text-align: left;
+  }
