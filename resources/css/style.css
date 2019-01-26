@@ -145,17 +145,23 @@ Nav{
 
 /*footer container information*/
 
-    .contact-info {
-      margin: 0 auto;
+    #contact-info {
+      margin: 50px auto 0 auto;
       height: 200px;
       }
 
-.contact-info>h2 {
-  padding: 10px 0;
-  }
+      #contact-info>h2 {
+        margin: 0;
+        padding-bottom: 30px;
+        }
 
-  .copyright{
-    align-self: flex-start;
-    margin: 20px;
-    text-align: left;
-  }
+        #contact-info>h5{
+          margin-top: 0;
+          padding-top: 0px;
+        }
+
+        #copyright{
+          align-self: flex-start;
+          margin-left: 20px;
+          text-align: left;
+        }
