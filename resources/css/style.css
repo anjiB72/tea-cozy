@@ -32,10 +32,26 @@ Nav{
 .menu {
   padding-left: 20px;
 }
-.menu a {
+.menu>a {
   text-decoration: underline;
   color: seashell;
   }
+
+/*main content container fixing position relative to header*/
+.main-container{
+  position: relative;
+  top: 70px;
+  Margin: 0;
+}
+
+/*styling for all elements with flex-container class*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
 
 /*Main picture and heading text*/
 .maincontent{
@@ -43,139 +59,103 @@ Nav{
   width: 1200px;
   height: 700px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
+  }
 
-.mission{
-  background-color: black;
-  width:inherit;
-  height: auto;
-  margin: 0 auto;
-}
-
-  .mission h4,
-  .mission h2 {
-    width: inherit;
+  .mission{
+    background-color: black;
+    width:inherit;
+    height: auto;
     margin: 0 auto;
-    padding: 7px 0;
-    text-align: center;
   }
 
-
-/*tea of the month*/
-
-.container {
-  padding-top: 100px;
-  width: 1000px;
-  height: 700px;
-  margin: 0px auto;
-}
-
-.tom-heading {
-  margin: 0;
-  padding: 17px 0px 0 10px 0;
-  text-align: center;
-}
-
-.container>h4 {
-  margin: 5px 0;
-  text-align: center;
-}
-
-.teas{
-  margin: 15px auto 0 auto;
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  }
-
-  .teas-top{
-    display: flex;
-    justify-content:space-around;
-  }
-
-  .teas-bottom{
-    display: flex;
-    justify-content: center;
-  }
-
-  .myrtle {
-    margin-right: 25px;
-  }
-
-.berry,
-.rum,
-.donut,
-.myrtle,
-.bedford {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+    .mission>h4,
+    .mission>h2 {
+      width: inherit;
+      margin: 0 auto;
+      padding: 7px 0;
+      text-align: center;
     }
 
-.tea-name{
-  margin-top: 10px;
-}
+/*Tea of month content*/
+
+  .tea-of-month{
+    padding-top: 60px;
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+  }
+      .teas{
+      margin: 15px auto 0 auto;
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      }
+      .teas-top{
+        display: flex;
+        justify-content:space-around;
+      }
+      .teas-bottom{
+        display: flex;
+        justify-content: center;
+        align-self: auto;
+        width: 700px;
+        margin: auto;
+      }
+      .myrtle {
+        margin-right: 25px;
+      }
+
+      .tea-name{
+        margin-top: 10px;
+      }
+
+    .tea-of-month>h2,
+    .tea-of-month>h4 {
+      margin: 0;
+      padding-bottom: 10px;
+    }
 
 /*Location styling*/
 .all-locations {
   background-image: url(../images/img-locations-background.jpg);
   width: 1200px;
   height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   margin: 0 auto;
+  align-self: center;
   }
 
-  .all-locations>h2 {
-    margin: 60px auto 15px auto;
-    padding-top: 10px;
-  }
-
-.location {
+  .location {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
 }
 
-
-
-.address {
+.flex-container.address {
   background-color: black;
   width: 300px;
   opacity: 1;
   margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
     }
 
 .address>span {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
-    .contactinfo {
-      display: flex;
-      flex-direction: column;
-      justify-content:flex-start;
-      align-items: center;
-      justify-content: space-between;
-      height: 200px;
-      margin: 0;
-    }
+/*footer container information*/
 
-.contactinfo>h2,
-.contactinfo>h5 {
-  margin: 0;
+    .contact-info {
+      margin: 0 auto;
+      height: 200px;
+      }
+
+.contact-info>h2 {
+  padding: 10px 0;
   }
 
   .copyright{
+    align-self: flex-start;
     margin: 20px;
     text-align: left;
   }
